@@ -18,6 +18,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Team Members',
+      name: 'teamMembers',
+      type: 'array', 
+      of: [{ type: 'teamMember' }]
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
