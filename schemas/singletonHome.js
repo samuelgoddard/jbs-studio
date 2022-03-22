@@ -18,6 +18,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Background Image',
+      name: 'backgroundImage',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

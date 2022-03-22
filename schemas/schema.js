@@ -12,6 +12,7 @@ import work from './work'
 // Common
 import seo from './common/seo'
 import teamMember from './common/teamMember'
+import defaultImage from './common/defaultImage'
 
 export default createSchema({
   name: 'default',
@@ -22,6 +23,7 @@ export default createSchema({
     singletonContact,
     work,
     teamMember,
+    defaultImage,
     seo
   ]),
 })

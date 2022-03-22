@@ -20,6 +20,21 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: 'images',
+      type: 'array',
+      title: 'Images',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
