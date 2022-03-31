@@ -15,5 +15,11 @@ export default {
       type: 'string',
       validation: Rule => Rule.required()
     },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
   ]
 }

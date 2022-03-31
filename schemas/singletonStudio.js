@@ -11,10 +11,29 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Hero Image',
+      name: 'heroImage',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Hero Text',
+      name: 'heroText',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Content',
       name: 'content',
       type: 'array', 
       of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Content Supporting Image',
+      name: 'contentSupportingImage',
+      type: 'defaultImage',
       validation: Rule => Rule.required()
     },
     {

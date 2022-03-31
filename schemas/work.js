@@ -13,6 +13,36 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Teaser Image',
+      name: 'teaserImage',
+      type: 'defaultImage',
+      description: 'The main teaser image used on the work grid (should always be landscape)',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Teaser Image Thumbnail',
+      name: 'teaserImageThumbnail',
+      type: 'defaultImage',
+      description: 'The thumbnail of the teaser image used on the work grid (can be landscape or portrait)',
+      validation: Rule => Rule.required()
+    },
+    {
+      name: 'heroCarouselImages',
+      type: 'array',
+      title: 'Hero Carousel Images',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Content',
       name: 'content',
       type: 'array', 
