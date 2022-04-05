@@ -14,6 +14,11 @@ import work from './work'
 import seo from './common/seo'
 import teamMember from './common/teamMember'
 import defaultImage from './common/defaultImage'
+import modularImageBlock from './common/modularImageBlock'
+import textBlock from './common/textBlock'
+import imageCarouselBlock from './common/imageCarouselBlock'
+import collectionGridBlock from './common/collectionGridBlock'
+import modularImageTextBlock from './common/modularImageTextBlock'
 
 export default createSchema({
   name: 'default',
@@ -26,6 +31,11 @@ export default createSchema({
     work,
     teamMember,
     defaultImage,
+    modularImageBlock,
+    modularImageTextBlock,
+    textBlock,
+    imageCarouselBlock,
+    collectionGridBlock,
     seo
   ]),
 })
