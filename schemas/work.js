@@ -13,6 +13,45 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Category',
+      name: 'category',
+      type: 'string',
+      initialValue: 'drinks',
+      options: {
+        list: [
+          { title: 'Drinks', value: 'drinks' },
+          { title: 'Food', value: 'food' },
+          { title: 'Lifestyle', value: 'lifestyle' },
+        ],
+      },
+    },
+    {
+      title: 'Type',
+      name: 'type',
+      type: 'string',
+      initialValue: 'still',
+      options: {
+        list: [
+          { title: 'Still', value: 'still' },
+          { title: 'Moving', value: 'moving' }
+        ],
+      },
+    },
+    {
+      title: "Campaign Title",
+      description: "The name of the campaign for this project, eg: 'Ready To Drink Campaign'",
+      name: "campaignTitle",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Location",
+      description: "The location of this project, eg: 'London, UK'",
+      name: "location",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Teaser Image',
       name: 'teaserImage',
       type: 'defaultImage',
@@ -43,26 +82,38 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Content',
-      name: 'content',
+      title: 'Tags',
+      name: 'tags',
+      description: 'Tags for this project, eg: "Set Design", "Motion", "Social" etc',
       type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
+      of: [{type: 'string'}],
     },
     {
-      name: 'images',
-      type: 'array',
-      title: 'Images',
-      of: [
-        {
-          name: 'image',
-          type: 'defaultImage',
-          title: 'Image',
-        },
-      ],
-      options: {
-        layout: 'grid',
-      },
+      title: 'Credits',
+      name: 'credits',
+      description: 'Credits for this project',
+      type: 'array', 
+      of: [{
+        title: 'Credit',
+        name: 'credit',
+        type: 'object',
+        fields: [
+          {
+            title: 'Job',
+            name: 'job',
+            type: 'string',
+            description: 'eg: "Set & Styling", "Props / Set Asst',
+            validation: Rule => Rule.required()
+          },
+          {
+            title: 'Name',
+            name: 'name',
+            type: 'string',
+            description: 'eg: "Oliver Blackburn"',
+            validation: Rule => Rule.required()
+          },
+        ]
+      }]
     },
     {
       name: 'slug',

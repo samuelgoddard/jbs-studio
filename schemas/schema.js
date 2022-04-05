@@ -5,6 +5,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import singletonHome from './singletonHome'
 import singletonStudio from './singletonStudio'
 import singletonContact from './singletonContact'
+import singletonReel from './singletonReel'
 
 // Documents
 import work from './work'
@@ -21,6 +22,7 @@ export default createSchema({
     singletonHome,
     singletonStudio,
     singletonContact,
+    singletonReel,
     work,
     teamMember,
     defaultImage,

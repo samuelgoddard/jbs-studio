@@ -37,6 +37,20 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Client List',
+      name: 'clientList',
+      type: 'array', 
+      of: [{type: 'string'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Services List',
+      name: 'servicesList',
+      type: 'array', 
+      of: [{type: 'string'}],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Team Members',
       name: 'teamMembers',
       type: 'array', 

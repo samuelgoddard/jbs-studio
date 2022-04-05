@@ -16,10 +16,30 @@ export default {
       type: "string",
     },
     {
-      title: "Instagram",
-      name: "instagram",
-      type: "url",
-    }
+      title: 'Socials',
+      name: 'socials',
+      type: 'array', 
+      of: [{
+        title: 'Social',
+        name: 'social',
+        type: 'object',
+        fields: [
+          {
+            title: 'Title',
+            name: 'title',
+            type: 'string',
+            validation: Rule => Rule.required()
+          },
+          {
+            title: 'URL',
+            name: 'url',
+            type: 'string',
+            validation: Rule => Rule.required()
+          }
+        ]
+      }],
+      validation: Rule => Rule.required()
+    },
   ],
   preview: {
     select: {

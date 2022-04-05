@@ -40,5 +40,7 @@ export default () =>
       S.divider(),
       S.listItem().title('Work').child(S.documentTypeList('work').title('Work')).icon(FiCamera),
       S.divider(),
+      S.listItem().title('Reel').child(S.editor().id('reel').schemaType('reel').documentId('singleton-reel').views(getPreview('reel'))).icon(FiCamera),
+      S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiMail),
     ]);

@@ -21,5 +21,12 @@ export default {
       type: 'defaultImage',
       validation: Rule => Rule.required()
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'jobTitle',
+      media: 'image'
+    }
+  }
 }
