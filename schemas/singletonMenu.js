@@ -1,6 +1,6 @@
 export default {
-  title: 'Home',
-  name: 'home',
+  title: 'Menu',
+  name: 'menu',
   type: 'document',
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
@@ -11,17 +11,17 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Content',
-      name: 'content',
-      type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
-    },
-    {
       title: 'Background Image',
       name: 'backgroundImage',
       type: 'defaultImage',
       description: 'The default background image when the user lands on the page',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Home Background Image',
+      name: 'homeBackgroundImage',
+      type: 'defaultImage',
+      description: 'The image that appears when "Home" is hovered',
       validation: Rule => Rule.required()
     },
     {
@@ -39,10 +39,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'SEO / Share Settings',
-      name: 'seo',
-      type: 'seo'
-    }
+      title: 'Reel Background Image',
+      name: 'reelBackgroundImage',
+      type: 'defaultImage',
+      description: 'The image that appears when "Reel" is hovered',
+      validation: Rule => Rule.required()
+    },
   ],
   preview: {
     select: {
