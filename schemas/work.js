@@ -92,6 +92,7 @@ export default {
         {type: 'imageCarouselBlock', title: 'Image Carousel'},
         {type: 'collectionGridBlock', title: 'Collection Grid'},
         {type: 'modularImageTextBlock', title: 'Image + Text'},
+        {type: 'modularDoubleImageBlock', title: 'Double Image'},
       ],
     },
     {
