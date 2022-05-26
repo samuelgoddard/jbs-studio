@@ -7,26 +7,38 @@ export default {
   icon: FiColumns,
   fields: [
     {
-      title: 'Image 1 (Square)',
+      title: 'Image 1',
       name: 'image1',
       type: 'defaultImage',
       validation: Rule => Rule.required()
     },
     {
-      title: 'Image 2 (Portrait)',
+      title: 'Image 1 Aspect Ratio',
+      name: 'image1AspectRatio',
+      type: 'string',
+      initialValue: 'square',
+      options: {
+        list: [
+          { title: 'Square', value: 'square' },
+          { title: 'Portrait', value: 'portrait' },
+        ],
+      },
+    },
+    {
+      title: 'Image 2',
       name: 'image2',
       type: 'defaultImage',
       validation: Rule => Rule.required()
     },
     {
-      title: 'Layout',
-      name: 'layout',
+      title: 'Image 2 Aspect Ratio',
+      name: 'image2AspectRatio',
       type: 'string',
-      initialValue: 'portrait-right',
+      initialValue: 'portrait',
       options: {
         list: [
-          { title: 'Portrait Right', value: 'portrait-right' },
-          { title: 'Portrait Left', value: 'portrait-left' },
+          { title: 'Square', value: 'square' },
+          { title: 'Portrait', value: 'portrait' },
         ],
       },
     },

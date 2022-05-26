@@ -22,6 +22,7 @@ export default {
           { title: 'Full Bleed Landscape', value: 'full-bleed-landscape' },
           { title: 'Contained Landscape', value: 'contained-landscape' },
           { title: 'Contained Portrait', value: 'contained-portrait' },
+          { title: 'Contained Square', value: 'contained-square' },
         ],
       },
     },
