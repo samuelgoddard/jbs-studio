@@ -42,8 +42,7 @@ export default {
       title: "Campaign Title",
       description: "The name of the campaign for this project, eg: 'Ready To Drink Campaign'",
       name: "campaignTitle",
-      type: "string",
-      validation: Rule => Rule.required()
+      type: "string"
     },
     {
       title: "Location",
