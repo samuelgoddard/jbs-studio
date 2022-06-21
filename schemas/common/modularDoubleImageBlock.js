@@ -42,6 +42,12 @@ export default {
         ],
       },
     },
+    {
+      title: 'Reverse Order',
+      name: 'reverseOrder',
+      type: 'boolean',
+      description: 'Toggling this on will reverse the order of the images.'
+    },
   ],
   preview: {
     select: {

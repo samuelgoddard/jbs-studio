@@ -21,6 +21,7 @@ import imageCarouselBlock from './common/imageCarouselBlock'
 import collectionGridBlock from './common/collectionGridBlock'
 import modularImageTextBlock from './common/modularImageTextBlock'
 import modularDoubleImageBlock from './common/modularDoubleImageBlock'
+import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 
 export default createSchema({
   name: 'default',
@@ -37,6 +38,7 @@ export default createSchema({
     modularImageBlock,
     modularImageTextBlock,
     modularDoubleImageBlock,
+    modularSideBySideImageBlock,
     textBlock,
     imageCarouselBlock,
     collectionGridBlock,

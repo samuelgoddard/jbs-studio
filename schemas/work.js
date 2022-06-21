@@ -93,6 +93,7 @@ export default {
         {type: 'collectionGridBlock', title: 'Collection Grid'},
         {type: 'modularImageTextBlock', title: 'Image + Text'},
         {type: 'modularDoubleImageBlock', title: 'Double Image'},
+        {type: 'modularSideBySideImageBlock', title: 'Side By Side Portrait Image'},
       ],
     },
     {

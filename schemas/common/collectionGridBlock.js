@@ -22,8 +22,7 @@ export default {
         },{
           title: 'Text',
           name: 'text',
-          type: 'string',
-          validation: Rule => Rule.required()
+          type: 'string'
         }],
         preview: {
           select: {
