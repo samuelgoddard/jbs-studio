@@ -34,7 +34,8 @@ export default {
       options: {
         list: [
           { title: 'Still', value: 'still' },
-          { title: 'Moving', value: 'moving' }
+          { title: 'Moving', value: 'moving' },
+          { title: 'Still & Moving', value: 'still-and-moving' }
         ],
       },
     },
