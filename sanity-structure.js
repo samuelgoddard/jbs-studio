@@ -1,4 +1,5 @@
 import S from "@sanity/desk-tool/structure-builder";
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import IframePreview from './preview/IFramePreview'
 
 import {
@@ -39,7 +40,13 @@ export default () =>
       S.divider(),
       S.listItem().title('Studio').child(S.editor().id('studio').schemaType('studio').documentId('singleton-studio').views(getPreview('studio'))).icon(FiUser),
       S.divider(),
-      S.listItem().title('Work').child(S.documentTypeList('work').title('Work')).icon(FiCamera),
+      // S.listItem().title('Work').child(S.documentTypeList('work').title('Work')).icon(FiCamera),
+      orderableDocumentListDeskItem({
+        type: 'work',
+        title: 'Work',
+        icon: FiCamera,
+        id: 'orderable-work-grid'
+      }),
       S.divider(),
       S.listItem().title('Reel').child(S.editor().id('reel').schemaType('reel').documentId('singleton-reel').views(getPreview('reel'))).icon(FiCamera),
       S.divider(),
