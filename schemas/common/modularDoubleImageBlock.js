@@ -22,6 +22,7 @@ export default {
           { title: 'Square', value: 'square' },
           { title: 'Portrait', value: 'portrait' },
         ],
+        layout: 'radio' // <-- defaults to 'dropdown'
       },
     },
     {
@@ -40,24 +41,20 @@ export default {
           { title: 'Square', value: 'square' },
           { title: 'Portrait', value: 'portrait' },
         ],
+        layout: 'radio' // <-- defaults to 'dropdown'
       },
-    },
-    {
-      title: 'Reverse Order',
-      name: 'reverseOrder',
-      type: 'boolean',
-      description: 'Toggling this on will reverse the order of the images.'
-    },
+    }
   ],
   preview: {
     select: {
-      layout: 'layout'
+      image1AspectRatio: 'image1AspectRatio',
+      image2AspectRatio: 'image2AspectRatio'
     },
     prepare(selection) {
-      const {layout} = selection
+      const {image1AspectRatio, image2AspectRatio} = selection
       return {
         title: 'Double Image Block',
-        subtitle: `${layout}`
+        subtitle: `${image1AspectRatio} / ${image2AspectRatio}`
       }
     }
   }

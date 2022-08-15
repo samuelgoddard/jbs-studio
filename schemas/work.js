@@ -104,7 +104,7 @@ export default {
         {type: 'textBlock', title: 'Text'},
         {type: 'imageCarouselBlock', title: 'Image Carousel'},
         {type: 'collectionGridBlock', title: 'Collection Grid'},
-        {type: 'modularImageTextBlock', title: 'Image + Text'},
+        // {type: 'modularImageTextBlock', title: 'Image + Text'},
         {type: 'modularDoubleImageBlock', title: 'Double Image'},
         {type: 'modularSideBySideImageBlock', title: 'Side By Side Portrait Image'},
       ],
