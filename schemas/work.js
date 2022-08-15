@@ -14,7 +14,7 @@ export default {
     orderRankField({ type: 'category', hidden: false }),
     {
       title: "Title",
-      description: "The name of this release",
+      description: "The name of this project",
       name: "title",
       type: "string",
       validation: Rule => Rule.required()
@@ -31,6 +31,12 @@ export default {
           { title: 'Lifestyle', value: 'lifestyle' },
         ],
       },
+    },
+    {
+      title: "Year",
+      description: "The year of this project",
+      name: "year",
+      type: "string"
     },
     {
       title: 'Type',

@@ -20,17 +20,27 @@ export default {
       options: {
         list: [
           { title: 'Full Bleed Landscape', value: 'full-bleed-landscape' },
-          { title: 'Contained Landscape Center', value: 'contained-landscape' },
-          { title: 'Contained Landscape Left', value: 'contained-landscape-left' },
-          { title: 'Contained Landscape Right', value: 'contained-landscape-right' },
-          { title: 'Contained Portrait Center', value: 'contained-portrait' },
-          { title: 'Contained Portrait Left', value: 'contained-portrait-left' },
-          { title: 'Contained Portrait Right', value: 'contained-portrait-right' },
-          { title: 'Contained Square Center', value: 'contained-square' },
-          { title: 'Contained Square Left', value: 'contained-square-left' },
-          { title: 'Contained Square Right', value: 'contained-square-right' },
+          { title: 'Contained Landscape', value: 'contained-landscape' },
+          { title: 'Contained Portrait', value: 'contained-portrait' },
+          { title: 'Contained Square', value: 'contained-square' },
         ],
+        layout: 'radio' // <-- defaults to 'dropdown'
       },
+    },
+    {
+      title: 'Position',
+      name: 'position',
+      type: 'string',
+      initialValue: 'left',
+      options: {
+        list: [
+          { title: 'Left', value: 'left' },
+          { title: 'Center', value: 'center' },
+          { title: 'Right', value: 'right' }
+        ],
+        layout: 'radio' // <-- defaults to 'dropdown'
+      },
+      hidden: ({parent}) => (parent?.layout === 'full-bleed-landscape'),
     },
   ],
   preview: {
