@@ -20,7 +20,7 @@ export default {
       options: {
         list: [
           { title: 'Square', value: 'square' },
-          { title: 'Portrait', value: 'portrait' },
+          { title: 'Portrait (4:3)', value: 'portrait' },
         ],
         layout: 'radio' // <-- defaults to 'dropdown'
       },
@@ -39,7 +39,7 @@ export default {
       options: {
         list: [
           { title: 'Square', value: 'square' },
-          { title: 'Portrait', value: 'portrait' },
+          { title: 'Portrait (4:3)', value: 'portrait' },
         ],
         layout: 'radio' // <-- defaults to 'dropdown'
       },

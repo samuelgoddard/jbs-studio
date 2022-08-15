@@ -14,6 +14,12 @@ export default {
       type: 'file'
     },
     {
+      title: 'Override Vimeo Video (Optional)',
+      description: 'Optionally override this image with a short video from a direct Vimeo URL',
+      name: 'overrideVimeoVideo',
+      type: 'string'
+    },
+    {
       title: 'Alternative Text (Optional)',
       description: 'Used by screen readers to describe the image',
       name: 'alt',
