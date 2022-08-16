@@ -95,6 +95,22 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: 'quickViewImages',
+      type: 'array',
+      title: 'Quick View Images',
+      description: 'The array of images that will pop up when the user clicks "Quick View" on this project.',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      }
+    },
+    {
       title: 'Content Blocks',
       name: 'contentBlocks',
       description: 'The modular content blocks for this project',
