@@ -48,8 +48,8 @@ export default () =>
         id: 'orderable-work-grid'
       }),
       S.divider(),
-      S.listItem().title('Reel').child(S.editor().id('reel').schemaType('reel').documentId('singleton-reel').views(getPreview('reel'))).icon(FiCamera),
-      S.divider(),
+      // S.listItem().title('Reel').child(S.editor().id('reel').schemaType('reel').documentId('singleton-reel').views(getPreview('reel'))).icon(FiCamera),
+      // S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiMail),
       S.divider(),
       S.listItem().title('Menu').child(S.editor().id('menu').schemaType('menu').documentId('singleton-menu')).icon(FiMenu),
