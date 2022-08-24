@@ -31,10 +31,21 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Content Supporting Image',
-      name: 'contentSupportingImage',
-      type: 'defaultImage',
-      validation: Rule => Rule.required()
+      name: 'contentSupportingImages',
+      type: 'array',
+      title: 'Content Supporting Images',
+      description: 'The array of images the flick on the left as you scroll',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+      validation: Rule => Rule.required().min(12).max(12)
     },
     {
       title: 'Client List',
