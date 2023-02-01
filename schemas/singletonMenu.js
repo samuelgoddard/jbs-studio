@@ -18,10 +18,10 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Home Background Image',
+      title: 'Email Background Image',
       name: 'homeBackgroundImage',
       type: 'defaultImage',
-      description: 'The image that appears when "Home" is hovered',
+      description: 'The image that appears when "Email" is hovered',
       validation: Rule => Rule.required()
     },
     {
@@ -39,8 +39,15 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Reel Background Image',
+      title: 'Insta Background Image',
       name: 'reelBackgroundImage',
+      type: 'defaultImage',
+      description: 'The image that appears when "Insta" is hovered',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Reel Background Image',
+      name: 'instaBackgroundImage',
       type: 'defaultImage',
       description: 'The image that appears when "Reel" is hovered',
       validation: Rule => Rule.required()
