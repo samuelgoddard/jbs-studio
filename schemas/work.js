@@ -118,6 +118,7 @@ export default {
       of: [
         {type: 'modularImageBlock', title: 'Single Image'},
         {type: 'modularVideoBlock', title: 'Full Video Block'},
+        {type: 'modularVideoBlockSquare', title: 'Full Video Block (Square)'},
         {type: 'textBlock', title: 'Text'},
         {type: 'imageCarouselBlock', title: 'Image Carousel'},
         {type: 'collectionGridBlock', title: 'Collection Grid'},

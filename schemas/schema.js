@@ -23,6 +23,7 @@ import modularImageTextBlock from './common/modularImageTextBlock'
 import modularDoubleImageBlock from './common/modularDoubleImageBlock'
 import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 import modularVideoBlock from './common/modularVideoBlock'
+import modularVideoBlockSquare from './common/modularVideoBlockSquare'
 
 export default createSchema({
   name: 'default',
@@ -41,6 +42,7 @@ export default createSchema({
     modularDoubleImageBlock,
     modularSideBySideImageBlock,
     modularVideoBlock,
+    modularVideoBlockSquare,
     textBlock,
     imageCarouselBlock,
     collectionGridBlock,
