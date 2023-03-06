@@ -52,6 +52,13 @@ export default {
       description: 'The image that appears when "Reel" is hovered',
       validation: Rule => Rule.required()
     },
+    {
+      title: 'Reel URL',
+      name: 'reelUrl',
+      type: 'url',
+      description: 'The URL from Vimeo for the "Reel" popup on both "Menu" and "Home',
+      validation: Rule => Rule.required()
+    },
   ],
   preview: {
     select: {
