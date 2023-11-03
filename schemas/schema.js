@@ -7,6 +7,7 @@ import singletonStudio from './singletonStudio'
 import singletonContact from './singletonContact'
 import singletonReel from './singletonReel'
 import singletonMenu from './singletonMenu'
+import singletonSustainability from './singletonSustainability'
 
 // Documents
 import work from './work'
@@ -33,6 +34,7 @@ export default createSchema({
     singletonStudio,
     singletonContact,
     singletonReel,
+    singletonSustainability,
     singletonMenu,
     work,
     teamMember,

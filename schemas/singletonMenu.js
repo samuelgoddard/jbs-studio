@@ -39,6 +39,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Sustainability Background Image',
+      name: 'sustainabilityBackgroundImage',
+      type: 'defaultImage',
+      description: 'The image that appears when "Sustainability" is hovered',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Insta Background Image',
       name: 'reelBackgroundImage',
       type: 'defaultImage',

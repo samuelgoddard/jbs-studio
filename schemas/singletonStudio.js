@@ -16,13 +16,13 @@ export default {
       type: 'defaultImage',
       validation: Rule => Rule.required()
     },
-    {
-      title: 'Hero Text',
-      name: 'heroText',
-      type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
-    },
+    // {
+    //   title: 'Hero Text',
+    //   name: 'heroText',
+    //   type: 'array', 
+    //   of: [{type: 'block'}],
+    //   validation: Rule => Rule.required()
+    // },
     {
       title: 'Content',
       name: 'content',
@@ -46,6 +46,12 @@ export default {
         layout: 'grid',
       },
       validation: Rule => Rule.required().min(12).max(12)
+    },
+    {
+      title: 'Pullout Text',
+      name: 'pulloutText',
+      type: 'text', 
+      rows: 4
     },
     {
       title: 'Client List',
