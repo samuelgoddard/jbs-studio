@@ -10,12 +10,18 @@ export default {
       type: 'string',
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Content',
+    //   name: 'content',
+    //   type: 'array', 
+    //   of: [{type: 'block'}],
+    //   validation: Rule => Rule.required()
+    // },
     {
-      title: 'Content',
-      name: 'content',
-      type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
+      title: 'Header Tagline',
+      name: 'headerTagline',
+      type: 'string',
+      description: 'eg: "A Photography And Motion Studio, London"'
     },
     {
       title: 'Background Image',
