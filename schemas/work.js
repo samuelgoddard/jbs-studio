@@ -20,7 +20,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Category',
+      title: 'Category (New)',
+      name: 'categoryNew',
+      type: 'reference',
+      to: [{type: 'category'}]
+    },
+    {
+      title: 'Category (To Be Deprecated)',
       name: 'category',
       type: 'string',
       initialValue: 'drinks',

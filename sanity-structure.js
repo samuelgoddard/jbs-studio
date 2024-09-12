@@ -8,7 +8,9 @@ import {
   FiCamera,
   FiUser,
   FiMenu,
-  FiSun
+  FiSun,
+  FiTag,
+  FiInstagram
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -49,6 +51,20 @@ export default () =>
         title: 'Work',
         icon: FiCamera,
         id: 'orderable-work-grid'
+      }),
+      S.divider(),
+      orderableDocumentListDeskItem({
+        type: 'snapshot',
+        title: 'Snapshots',
+        icon: FiInstagram,
+        id: 'orderable-snapshot-grid'
+      }),
+      S.divider(),
+      orderableDocumentListDeskItem({
+        type: 'category',
+        title: 'Categories',
+        icon: FiTag,
+        id: 'orderable-cat-grid'
       }),
       S.divider(),
       // S.listItem().title('Reel').child(S.editor().id('reel').schemaType('reel').documentId('singleton-reel').views(getPreview('reel'))).icon(FiCamera),

@@ -74,6 +74,23 @@ export default {
       of: [{ type: 'teamMember' }]
     },
     {
+      title: 'Content Blocks',
+      name: 'contentBlocks',
+      description: 'The modular content blocks for the studio page',
+      type: 'array',
+      of: [
+        {type: 'modularImageBlock', title: 'Single Image'},
+        {type: 'modularVideoBlock', title: 'Full Video Block'},
+        {type: 'modularVideoBlockSquare', title: 'Full Video Block (Square)'},
+        {type: 'textBlock', title: 'Text'},
+        {type: 'imageCarouselBlock', title: 'Image Carousel'},
+        {type: 'collectionGridBlock', title: 'Collection Grid'},
+        // {type: 'modularImageTextBlock', title: 'Image + Text'},
+        {type: 'modularDoubleImageBlock', title: 'Double Image'},
+        {type: 'modularSideBySideImageBlock', title: 'Side By Side Portrait Image'},
+      ],
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

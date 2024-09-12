@@ -25,6 +25,8 @@ import modularDoubleImageBlock from './common/modularDoubleImageBlock'
 import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 import modularVideoBlock from './common/modularVideoBlock'
 import modularVideoBlockSquare from './common/modularVideoBlockSquare'
+import snapshot from './snapshot'
+import category from './category'
 
 export default createSchema({
   name: 'default',
@@ -37,6 +39,8 @@ export default createSchema({
     singletonSustainability,
     singletonMenu,
     work,
+    snapshot,
+    category,
     teamMember,
     defaultImage,
     modularImageBlock,

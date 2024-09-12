@@ -45,6 +45,20 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Grid Items',
+      name: 'gridItems',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'work'},
+            {type: 'snapshot'}
+          ]
+        }
+      ]
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
