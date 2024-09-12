@@ -14,6 +14,20 @@ export default {
       type: 'file'
     },
     {
+      title: 'Override Video Aspect Ratio (Optional)',
+      description: 'Optionally force overrides the videos aspect ratio',
+      name: 'overrideVideoAspectRatio',
+      type: 'string',
+      options: {
+        list: [
+          { title: "16/9", value: "169" },
+          { title: "9/16", value: "916" },
+          { title: "4/5", value: "45" },
+          { title: "1/1", value: "11"}
+        ],
+      },
+    },
+    {
       title: 'Override Vimeo Video (Optional)',
       description: 'Optionally override this image with a short video from a direct Vimeo URL',
       name: 'overrideVimeoVideo',
