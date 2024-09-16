@@ -23,12 +23,27 @@ export default {
       title: 'Category (New)',
       name: 'categoryNew',
       type: 'reference',
+      hidden: true,
       to: [{type: 'category'}]
+    },
+    {
+      title: 'Category',
+      name: 'categoryMulti',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'category'},
+          ]
+        }
+      ]
     },
     {
       title: 'Category (To Be Deprecated)',
       name: 'category',
       type: 'string',
+      hidden: true,
       initialValue: 'drinks',
       options: {
         list: [

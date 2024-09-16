@@ -26,6 +26,7 @@ export default {
     {
       title: 'Background Image',
       name: 'backgroundImage',
+      hidden: true,
       type: 'defaultImage',
       description: 'The default background image when the user lands on the page',
       validation: Rule => Rule.required()
@@ -33,6 +34,7 @@ export default {
     {
       title: 'Work Background Image',
       name: 'workBackgroundImage',
+      hidden: true,
       type: 'defaultImage',
       description: 'The image that appears when "Work" is hovered',
       validation: Rule => Rule.required()
@@ -40,6 +42,7 @@ export default {
     {
       title: 'Studio Background Image',
       name: 'studioBackgroundImage',
+      hidden: true,
       type: 'defaultImage',
       description: 'The image that appears when "Studio" is hovered',
       validation: Rule => Rule.required()
