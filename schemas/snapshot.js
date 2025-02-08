@@ -43,14 +43,14 @@ export default {
       type: 'defaultImage',
       description: 'The thumbnail of the teaser image used on the work grid (can be landscape or portrait)',
       validation: Rule => Rule.required()
-    }
-    // {
-    //   title: 'Work Link (Optional)',
-    //   description: "Optionally link this snapshot to a work item",
-    //   name: 'workLink',
-    //   type: 'reference',
-    //   to: [{type: 'work'}]
-    // },
+    },
+    {
+      title: 'Work Link (Optional)',
+      description: "Optionally link this snapshot to a work item",
+      name: 'workLink',
+      type: 'reference',
+      to: [{type: 'work'}]
+    },
     // {
     //   title: "Related Work Year (Optional)",
     //   description: "The year of the campaign this snapshot links to",
