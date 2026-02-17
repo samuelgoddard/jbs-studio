@@ -30,6 +30,11 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Films Heading',
+      name: 'filmsHeading',
+      type: 'string'
+    },
+    {
       title: 'Films',
       name: 'films',
       type: 'array', 
