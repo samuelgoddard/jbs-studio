@@ -110,6 +110,11 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Logos Image',
+      name: 'logosImage',
+      type: 'defaultImage'
+    },
+    {
       title: 'Image Grid',
       name: 'imageGrid',
       type: 'array', 
