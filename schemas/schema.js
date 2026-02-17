@@ -8,6 +8,7 @@ import singletonContact from './singletonContact'
 import singletonReel from './singletonReel'
 import singletonMenu from './singletonMenu'
 import singletonSustainability from './singletonSustainability'
+import singletonFilmNarrative from './singletonFilmNarrative'
 
 // Documents
 import work from './work'
@@ -34,6 +35,7 @@ export default createSchema({
   types: schemaTypes.concat([
     singletonHome,
     singletonStudio,
+    singletonFilmNarrative,
     singletonContact,
     singletonReel,
     singletonSustainability,

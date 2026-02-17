@@ -9,6 +9,7 @@ import {
   FiUser,
   FiMenu,
   FiSun,
+  FiFilm,
   FiTag,
   FiInstagram
 } from 'react-icons/fi'
@@ -40,6 +41,8 @@ export default () =>
     .title("Content")
     .items([
       S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
+      S.divider(),
+      S.listItem().title('Film + Narrative').child(S.editor().id('filmNarrative').schemaType('filmNarrative').documentId('singleton-filmNarrative').views(getPreview('filmNarrative'))).icon(FiFilm),
       S.divider(),
       S.listItem().title('Studio').child(S.editor().id('studio').schemaType('studio').documentId('singleton-studio').views(getPreview('studio'))).icon(FiUser),
       S.divider(),
