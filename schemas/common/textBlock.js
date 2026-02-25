@@ -27,6 +27,20 @@ export default {
         layout: 'radio' // <-- defaults to 'dropdown'
       },
     },
+    {
+      title: 'Text Alignment',
+      name: 'textAlignment',
+      type: 'string',
+      initialValue: 'left',
+      options: {
+        list: [
+          { title: 'Left', value: 'left' },
+          { title: 'Center', value: 'center' },
+          { title: 'Right', value: 'right' }
+        ],
+        layout: 'radio' // <-- defaults to 'dropdown'
+      },
+    },
   ],
   preview: {
     select: {

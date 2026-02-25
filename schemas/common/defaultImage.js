@@ -28,6 +28,12 @@ export default {
       },
     },
     {
+      title: 'External Link (Optional)',
+      description: 'Optionally add an external link to the image',
+      name: 'externalLink',
+      type: 'string'
+    },
+    {
       title: 'Override Vimeo Video (Optional)',
       description: 'Optionally override this image with a short video from a direct Vimeo URL',
       name: 'overrideVimeoVideo',
