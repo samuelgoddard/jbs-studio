@@ -115,6 +115,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Footer Text',
+      name: 'footerText',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Logos Image',
       name: 'logosImage',
       type: 'defaultImage'
